@@ -5,7 +5,7 @@ export class Toolbar extends ExcelComponent {
   
   toHTML() {
     return `
-    <div class="button">
+      <div class="button">
         <i class="material-icons">format_align_left</i>
       </div>
       <div class="button">

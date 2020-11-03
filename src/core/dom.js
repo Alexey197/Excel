@@ -1,12 +1,12 @@
 class Dom {
   constructor(selector) {
-    this.$el = typeof selector==='string'
+    this.$el = typeof selector === 'string'
       ? document.querySelector(selector)
-      :selector
+      : selector
   }
   
-  html(html = '') {
-    if (typeof html==='string') {
+  html(html) {
+    if (typeof html === 'string') {
       this.$el.innerHTML = html
       return this
     }
@@ -27,6 +27,7 @@ class Dom {
     } else {
       this.$el.appendChild(node)
     }
+    
     return this
   }
 }
@@ -42,3 +43,4 @@ $.create = (tagName, classes = '') => {
   }
   return $(el)
 }
+
