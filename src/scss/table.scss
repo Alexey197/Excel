@@ -24,8 +24,8 @@
     min-width: $info-cell-width;
     height: 100%;
     border: 1px solid $border-color;
-    border-top: none;
     background: #f8f9fa;
+    border-top: none;
   }
 
   .row-data {
@@ -58,6 +58,7 @@
     white-space: nowrap;
     outline: none;
 
+
     &.selected {
       border: none;
       outline: 2px solid $primary-color;
@@ -67,12 +68,11 @@
 
   .col-resize, .row-resize {
     position: absolute;
-    right: 0;
     bottom: 0;
+    right: 0;
     background: $primary-color;
     opacity: 0;
     z-index: 1000;
-
 
     &:hover {
       opacity: 1!important;
